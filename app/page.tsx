@@ -1,6 +1,9 @@
-import { Sidebar } from "lucide-react";
-import Image from "next/image";
+import JiraTicketInterface from "../components/JiraTicketInterface";
 
 export default function Home() {
-  return <></>;
+  return (
+    <main className="container m-48">
+      <JiraTicketInterface />
+    </main>
+  );
 }

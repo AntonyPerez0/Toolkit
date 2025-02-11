@@ -30,24 +30,14 @@ import { ModeToggle } from "@/components/ui/mode-toggle";
 // Menu items.
 const items = [
   {
-    title: "Home",
-    url: "#",
-    icon: Home,
-  },
-  {
-    title: "Inbox",
-    url: "#",
-    icon: Inbox,
-  },
-  {
-    title: "Calendar",
-    url: "#",
-    icon: Calendar,
-  },
-  {
-    title: "Search",
+    title: "Find Ticket",
     url: "#",
     icon: Search,
+  },
+  {
+    title: "Current Ticket",
+    url: "#",
+    icon: ChevronUp,
   },
   {
     title: "Settings",
@@ -67,7 +57,7 @@ export function AppSidebar() {
       </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>Application</SidebarGroupLabel>
+          <SidebarGroupLabel>Views</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => (
@@ -98,9 +88,6 @@ export function AppSidebar() {
               <DropdownMenuContent side="top" align="center" className="w-56">
                 <DropdownMenuItem>
                   <span>Account</span>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <span>Billing</span>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <span>Sign out</span>
